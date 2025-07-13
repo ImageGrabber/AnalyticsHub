@@ -1,129 +1,72 @@
-# AnalyticsHub - Modern Dashboard
+# AnalyticsHub Dashboard
 
-A comprehensive analytics and data visualization dashboard built with Next.js, TypeScript, Tailwind CSS, and Recharts.
+![Dashboard Screenshot](./screenshots/dashboard-sample.png)
+
+A modern, visually stunning analytics dashboard built with Next.js, TypeScript, and Tailwind CSS. This project features a beautiful dark/orange theme, a calendar scheduler, goal tracking, and more—designed to match premium UI inspiration.
 
 ## Features
 
-- 📊 **Interactive Charts**: Beautiful data visualizations using Recharts
-- 🎨 **Modern UI**: Clean, responsive design with Tailwind CSS
-- 📱 **Mobile Responsive**: Works perfectly on all devices
-- ⚡ **Fast Performance**: Built with Next.js for optimal performance
-- 🔧 **TypeScript**: Full type safety and better developer experience
-- 🎯 **Real-time Data**: Ready for real-time data integration
-
-## Tech Stack
-
-- **Framework**: Next.js 14 with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Charts**: Recharts
-- **Icons**: Lucide React
-- **Font**: Inter (Google Fonts)
+- 📅 Interactive calendar/schedule widget
+- 🧑‍💻 Sidebar navigation with icons
+- 🎯 Goal/task tracking and progress
+- 🧠 AI Assistant card
+- 🟠 Modern dark/orange theme
+- ⚡ Responsive and fast (Next.js 14)
+- 🖼️ Custom avatars and images
 
 ## Getting Started
 
 ### Prerequisites
-
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Installation
-
-1. Navigate to the project directory:
+1. Clone the repository:
    ```bash
+   git clone https://github.com/ImageGrabber/AnalyticsHub.git
    cd AnalyticsHub
    ```
-
 2. Install dependencies:
    ```bash
    npm install
+   # or
+   yarn install
    ```
-
 3. Run the development server:
    ```bash
    npm run dev
+   # or
+   yarn dev
    ```
-
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Project Structure
 
 ```
 AnalyticsHub/
+├── public/
+├── screenshots/
+│   └── dashboard-sample.png   # Dashboard screenshot
 ├── src/
 │   └── app/
-│       ├── globals.css          # Global styles and Tailwind config
-│       ├── layout.tsx           # Root layout component
-│       └── page.tsx             # Main dashboard page
-├── public/                      # Static assets
-├── package.json                 # Dependencies and scripts
-├── tailwind.config.js          # Tailwind CSS configuration
-├── tsconfig.json               # TypeScript configuration
-└── next.config.ts              # Next.js configuration
+│       ├── layout.tsx
+│       ├── page.tsx
+│       └── globals.css
+├── .gitignore
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
 ```
 
-## Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-
-## Dashboard Components
-
-### Sidebar Navigation
-- Dashboard overview
-- Users management
-- Revenue tracking
-- Analytics
-- Settings
-
-### Main Dashboard
-- **Stats Cards**: Key metrics with trend indicators
-- **Bar Chart**: Monthly revenue visualization
-- **Pie Chart**: Traffic sources breakdown
-- **Search Bar**: Global search functionality
-- **Notifications**: User notifications system
-
 ## Customization
-
-### Adding New Charts
-1. Import required components from Recharts
-2. Create your data structure
-3. Add the chart component to the dashboard
-
-### Styling
-- Modify `tailwind.config.js` for theme customization
-- Update CSS variables in `globals.css` for color schemes
-- Add new components in the `src/components/` directory
-
-### Data Integration
-- Replace mock data with real API calls
-- Add data fetching logic using React hooks
-- Implement real-time updates with WebSocket connections
-
-## Deployment
-
-### Vercel (Recommended)
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically
-
-### Other Platforms
-- Build the project: `npm run build`
-- Deploy the `out` directory to your hosting provider
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+- **Theme:** Edit `tailwind.config.js` and `globals.css` for colors and fonts.
+- **Widgets:** Modify `src/app/page.tsx` to add or change dashboard cards.
+- **Images:** Replace avatars or background images in the code or add your own to `public/`.
 
 ## License
+MIT
 
-This project is open source and available under the [MIT License](LICENSE).
+---
 
-## Support
-
-For support and questions, please open an issue on GitHub. 
+> **UI inspired by premium dashboard concepts. For learning and demo purposes.** 
