@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-background text-text;
+  }
+  body {
+    @apply bg-background text-text min-h-screen;
+  }
+  .card {
+    @apply bg-card rounded-xl shadow-card border border-border;
+  }
+  .sidebar {
+    @apply bg-sidebar text-text rounded-2xl shadow-card;
+  }
+  .accent {
+    @apply text-accent;
+  }
+  .accent-bg {
+    @apply bg-accent text-white;
+  }
+  .muted {
+    @apply text-muted;
+  }
+  .bordered {
+    @apply border border-border;
+  }
+} 
